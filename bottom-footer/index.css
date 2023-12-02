@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(0 0 0 / 20%); - This line is for debugging */ 
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: lightgray;
+}
+
+html,
+body,
+.layout-bottom-footer {
+    height: 100%;
+}
+
+.layout-bottom-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-bottom-footer main {
+    flex: 1;
+}
