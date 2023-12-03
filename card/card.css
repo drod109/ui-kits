@@ -4,6 +4,7 @@
     border: 1px solid #C4CFDC;
     border-radius: 4px;
     background-color: white;
+    font-size: 16px;
   }
 
   .card-title {
@@ -18,14 +19,14 @@
   }
   
   .card-details {
-    padding: 15px;
+    padding: 1em;
     display: flex;
     flex-direction: column;
   }
   
   .card-details h2 {
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 1.4em;
     font-weight: 500;
   }
   
