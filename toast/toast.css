@@ -31,13 +31,13 @@ body {
 
 .toast-header-action {
     margin: 0;
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .toast-body {
     margin: 0;
     padding: 12px;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .toast-header-icon {

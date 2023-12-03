@@ -4,7 +4,7 @@
     border: 1px solid #C4CFDC;
     border-radius: 4px;
     background-color: white;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .card-title {
@@ -36,7 +36,7 @@
   }
 
   .card-footer p {
-    font-size: 14px;
+    font-size: .875rem;
   }
 
   .card-footer {
