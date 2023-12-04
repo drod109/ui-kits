@@ -38,3 +38,19 @@ body {
 	/* re-add the border to the last link */
 	border-right: 1px solid #dee2e6;
 }
+
+@media (max-width: 30rem) {
+    .pagination {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pagination-item {
+        display: contents;
+    }
+    .pagination-item:first-child .pagination-link {
+        border-top: 0;
+    }
+    .pagination-link {
+        border-bottom: 0;
+    }
+}
