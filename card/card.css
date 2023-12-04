@@ -48,3 +48,9 @@
   .card-details-text {
     flex: 1;
   }
+
+  @media (max-width: 30rem) {
+    .card {
+        flex-direction: column;
+    }
+}
