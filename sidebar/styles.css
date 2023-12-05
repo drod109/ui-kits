@@ -10,8 +10,14 @@ body {
 
 }
 
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin: auto;
+}
+
 .button {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #dee2e6;
     border-radius: 6px;
     color: black;
@@ -19,7 +25,7 @@ body {
 
 .button:hover {
     background-color: #dee2e6;
-    color: white;
+    color: blue;
 }
 
 span {

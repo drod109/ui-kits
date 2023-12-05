@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-flex;
+}
+
+.avatar-img {
+    border-radius: 50%;
+}
+
+.avatar-status--online {
+    width: 10px;
+    height: 10px;
+    background-color: #47CF73;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
