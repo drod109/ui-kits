@@ -67,3 +67,12 @@ body {
   color: #666;
   font-size: .875rem;
 }
+
+@media (max-width: 37.5rem) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: none;
+    }
+}
