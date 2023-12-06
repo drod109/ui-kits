@@ -7,3 +7,15 @@ body {
     font-family: system-ui;
     margin: 0;
 }
+
+.sidebar {
+    background-color: #A7ADBA;
+    min-height: 300px;
+    margin-top: 20px
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
