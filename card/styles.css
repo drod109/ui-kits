@@ -16,7 +16,7 @@ body {
 
 .ideas-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -102,12 +102,15 @@ body {
   top: -10px;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 37.5rem) {
     .card {
         flex-direction: column;
     }
     .card-image {
       flex-basis: 100px;
       background-position: center;
+    }
+    .ideas-grid {
+      grid-template-columns: 1fr;
     }
 }
