@@ -1,5 +1,34 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(0 0 0 / 20%); - This line is for debugging */ 
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+.ideas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Avatar Layout */
+.avatar {
+    border-radius: 50%;
+}
+
+/* Card Layout */
 .card {
     display: flex;
+    flex-direction: column;
     min-height: 200px;
     border: 1px solid #C4CFDC;
     border-radius: 4px;
@@ -16,6 +45,7 @@
   .card-image {
     background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1646915250/learnhtmlcss/images/travel-small.jpg");
     background-size: cover;
+    background-position: cover;
     flex: 0 0 150px;
   }
   
@@ -61,16 +91,6 @@
     inset: 0px;
   }
 
-  @media (max-width: 30rem) {
-    .card {
-        flex-direction: column;
-    }
-    .card-image {
-      flex-basis: 100px;
-      background-position: center;
-    }
-}
-
 .card-discount p {
   background-color: #00695C;
   color: white;
@@ -81,4 +101,14 @@
   position: absolute;
   right: 10px;
   top: -10px;
+}
+
+@media (max-width: 30rem) {
+    .card {
+        flex-direction: column;
+    }
+    .card-image {
+      flex-basis: 100px;
+      background-position: center;
+    }
 }
