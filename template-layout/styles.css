@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+.sidebar,
+.ads {
+    background-color: #A7ADBA;
+    padding-inline: 10px;
+}
+
+.grid-layout {
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 100px 1fr 150px;
+}
+
+.empty-state {
+    color: #05445E;
+    background-color: #D4F1F4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-state-title {
+    font-size: 16px;
+}
+
+.empty-state-description {
+    font-size: 12px;
+}
