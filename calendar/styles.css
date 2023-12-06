@@ -16,12 +16,12 @@ body {
 .calendar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-rows: 6.25rem 6.25rem;
+    gap: 10px;
 }
 
 .day {
     border: 1px solid #A7ADBA;
-    border-right: none;
     height: 100px;
     display: flex;
     align-items: center;
