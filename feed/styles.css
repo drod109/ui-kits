@@ -1,3 +1,35 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(0 0 0 / 20%); - This line is for debugging */ 
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+/* Sidebar and Grid Layout */
+
+.sidebar {
+    background-color: #A7ADBA;
+    min-height: 300px;
+    margin-top: 20px
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
+
+/* Feed Layout */
+
 .feeds {
     padding-left: 0;
 }
