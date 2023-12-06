@@ -15,7 +15,7 @@ body {
 
 .calendar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 6.25rem 6.25rem;
     gap: 10px;
 }
@@ -30,4 +30,10 @@ body {
 }
 .day:last-child {
   	border-right: 1px solid #A7ADBA;
+}
+
+@media (max-width: 37.5rem) {
+    .calendar {
+        grid-template-columns: 1fr;
+    }
 }
