@@ -1,0 +1,53 @@
+:root {
+    --header-height: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0 0 0 / 80%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+}
+
+#intro,
+#about, 
+#conclusion {
+    scroll-margin-top: 50px;
+}
+
+#header-offset {
+    height: var(--header-height);
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-block: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
