@@ -51,8 +51,7 @@ body {
   
   .card-details {
     padding: 1em;
-    display: flex;
-    flex-direction: column;
+    flex: 1;
   }
   
   .card-details h2 {
