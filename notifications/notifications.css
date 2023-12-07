@@ -5,9 +5,9 @@
 }
 
 .notification {
-    display:  flex;
-    align-items: center;
-    gap: 10px; /* for when the text is too long */
+    display:  grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
     border-bottom: 1px solid #ececec;
     padding: 15px 20px;
 }
