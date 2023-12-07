@@ -16,7 +16,7 @@ body {
 
 .ideas-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -32,7 +32,7 @@ body {
     min-height: 200px;
     border: 1px solid #C4CFDC;
     border-radius: 4px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 1rem;
   }
 
@@ -101,7 +101,7 @@ body {
   top: -10px;
 }
 
-@media (max-width: 37.5rem) {
+/* @media (max-width: 37.5rem) {
     .card {
         flex-direction: column;
     }
@@ -112,4 +112,4 @@ body {
     .ideas-grid {
       grid-template-columns: 1fr;
     }
-}
+} */
