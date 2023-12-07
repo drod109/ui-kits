@@ -17,9 +17,10 @@ body {
 /* Sidebar and Grid Layout */
 
 .sidebar {
-    background-color: #A7ADBA;
+    background-color: #ececec;
     min-height: 300px;
-    margin-top: 20px
+    margin-top: 20px;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .grid-layout {
@@ -35,8 +36,8 @@ body {
 }
 
 .feed {
-    display: flex;
-    align-items: flex-start; /* optional */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     gap: 10px;
     margin-bottom: 20px;
     padding-bottom: 20px;
