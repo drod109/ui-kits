@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: #ececec;
+    grid-area: header;
+}
+
 .sidebar,
 .ads {
     background-color: #A7ADBA;
@@ -18,6 +23,21 @@ body {
     height: 100dvh;
     display: grid;
     grid-template-columns: 100px 1fr 150px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main ads";
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.grid-layout--middle {
+    grid-area: main;
+}
+
+.ads {
+    grid-area: ads;
 }
 
 .empty-state {
@@ -41,6 +61,11 @@ body {
 @media (max-width: 37.5rem) {
     .grid-layout {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "ads"
     }
     .grid-layout--middle {
         order: -2
