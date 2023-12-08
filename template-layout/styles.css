@@ -7,38 +7,57 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #ececec;
-    grid-area: header;
-}
-
 .sidebar,
 .ads {
     background-color: #A7ADBA;
     padding-inline: 10px;
 }
 
+.grid-layout > * {
+    outline: 1px solid black;
+}
+
 .grid-layout {
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+	min-height: 100dvh;
     display: grid;
-    grid-template-columns: 100px 1fr 150px;
-    grid-template-areas:
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
         "header header header"
-        "sidebar main ads";
+        "nav main aside"
+        "footer footer footer";
+    gap: 10px;
 }
 
-.sidebar {
-    grid-area: sidebar;
+header {
+    grid-area: header;
 }
 
-.grid-layout--middle {
+nav {
+    grid-area: nav;
+}
+
+main {
     grid-area: main;
 }
 
-.ads {
-    grid-area: ads;
+aside {
+    grid-area: aside;
 }
+
+footer {
+    grid-area: footer;
+}
+
+@media (max-width: 25rem) {
+    .page-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "aside"  "footer";
+        grid-template-rows: auto;
+    }
+}
+
 
 .empty-state {
     color: #05445E;
@@ -56,18 +75,4 @@ header {
 
 .empty-state-description {
     font-size: 12px;
-}
-
-@media (max-width: 37.5rem) {
-    .grid-layout {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "sidebar"
-            "ads"
-    }
-    .grid-layout--middle {
-        order: -2
-    }
 }
