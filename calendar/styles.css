@@ -28,6 +28,11 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.day:first-child {
+    grid-column-start: 3;
+}
+
 .day:last-child {
   	border-right: 1px solid #A7ADBA;
 }
@@ -35,5 +40,8 @@ body {
 @media (max-width: 37.5rem) {
     .calendar {
         grid-template-columns: 1fr;
+    }
+    .day:first-child {
+        grid-column-start: 1;
     }
 }
