@@ -1,9 +1,0 @@
-* {
-    box-sizing: border-box;
-    /* outline: 1px solid rgba(0 0 0 / 20%); - This line is for debugging */ 
-}
-
-body {
-    font-family: system-ui;
-    margin: 0;
-}
