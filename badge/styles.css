@@ -1,3 +1,19 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(0 0 0 / 20%); - Only use for debugging */
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: Poppins, system-ui;
+    margin: 0;
+}
+
 .badge {
     background-color: #DBE3FF;
     color: #3D38A2;
