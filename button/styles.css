@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+body {
+    font-family: Poppins, system-ui;
+    margin: 0;
+    background-color: #DDD;
+}
+
+input, select, textarea, button {
+    font: inherit;
+}
+
+button {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 200ms, traslate 200ms;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active {
+    translate: 1px 1px;
+}
