@@ -16,6 +16,10 @@ body {
     margin: auto;
 }
 
+input, textarea, select, button {
+    font: inherit;
+}
+
 .button {
     padding: 12px;
     border: 1px solid #dee2e6;
@@ -40,27 +44,26 @@ span {
 
 #sidebar {
     background-color: white;
-    overflow-y: auto;
-    scroll-behavior: contain;
-    display: none;
-    width: max(200px, 20vw);
+    overflow-y: scroll;
+    overscroll-behavior: contain;
     height: 100vh;
+    width: max(200px, 17vw);
     position: fixed;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    left: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    translate: -400px;
+    transition: translate 300ms;
 }
 
 #sidebar.opened {
-    display: initial;
+    translate: 0px;
 }
 
 #sidebar ul {
     flex: 1;
     list-style: none;
+    justify-content: center;
 }
 
 #sidebar h1 {
@@ -68,3 +71,8 @@ span {
     font-size: 1.37rem;
 }
 
+@media (prefers-reduced-motion) {
+    #sidebar {
+        transition: none;
+    }
+}
