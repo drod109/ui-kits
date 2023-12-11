@@ -109,7 +109,7 @@ input, select, textarea, button {
 }
 
 @media (prefers-reduced-motion) {
-    .box-a, .box-b, .box-c {
+    .box-a, .box-b, .box-c, .box-d {
         animation: none;
     }
 }
