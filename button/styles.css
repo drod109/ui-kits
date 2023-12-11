@@ -29,6 +29,7 @@ button {
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 200ms, traslate 200ms;
+    margin-left: 5px;
 }
 
 button:hover {
