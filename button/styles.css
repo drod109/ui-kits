@@ -28,7 +28,7 @@ button {
     background-color: white;
     cursor: pointer;
     opacity: 0.8;
-    transition: opacity 200ms, traslate 200ms;
+    transition: opacity 200ms, translate 200ms;
     margin-left: 5px;
 }
 
