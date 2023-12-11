@@ -1,0 +1,115 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, system-ui;
+    margin: 0;
+}
+
+input, select, textarea, button {
+    font: inherit;
+}
+
+.grid-container {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "box-a"
+        "box-b"
+        "box-c"
+        "box-d";
+}
+
+.box-a {
+    grid-area: box-a;
+}
+
+.box-b {
+    grid-area: box-b;
+}
+
+.box-c {
+    grid-area: box-c;
+}
+
+.box-d {
+    grid-area: box-d;
+}
+
+.box-a {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    background-color: black;
+    animation: breath 2s infinite;
+}
+
+.box-b {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    display: grid;
+    margin-top: 20px;
+    animation: move 8s infinite;
+}
+
+.box-c {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    background-color: red;
+    margin-top: 20px;
+    opacity: 0.5;
+    transition: scale 300ms, opacity 300ms;
+}
+
+.box-d {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    background-color: darkorange;
+    margin-top: 20px;
+    animation: updown 8s linear infinite;
+    position: absolute;
+}
+
+.box-c:hover {
+    opacity: 1;
+    scale: 1.5;
+}
+
+@keyframes updown {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 400px;
+    }    
+}
+
+@keyframes move {
+    0%, 100% {
+        translate: 0;
+    }
+    50% {
+        translate: 100vw;
+    }
+}
+
+
+@keyframes breath {
+    0%, 100% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.5;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .box-a, .box-b, .box-c {
+        animation: none;
+    }
+}
