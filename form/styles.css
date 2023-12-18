@@ -54,3 +54,6 @@ select {
     border: 0;
     border-radius: 3px;
 }
+@media (max-width: 37.5rem) {
+    grid-template-columns: 1fr;
+}
