@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*, 
+::after, 
+::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins, system-ui;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pagination Section */
+.pagination-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.pagination {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+.pagination-link {
+    border: 1px solid #dee2e6;
+    /* remove the right border to avoid duplicate borders */
+    border-right: none;
+    padding: 6px 12px;
+    color: #0d6efd;
+    text-decoration: none;
+}
+.pagination-link:hover {
+ 	background-color: #dee2e6;
+}
+.pagination-item:first-child .pagination-link {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.pagination-item:last-child .pagination-link {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	/* re-add the border to the last link */
+	border-right: 1px solid #dee2e6;
+}
+@media (max-width: 30rem) {
+    .pagination {
+        flex-direction: column;
+        text-align: center;
+    }
+    .pagination-item {
+        display: contents;
+    }
+    .pagination-item:first-child .pagination-link {
+        border-top: 0;
+    }
+    .pagination-link {
+        border-bottom: 0;
+    }
+}
+
+/*  */
+.ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Avatar Layout */
+.avatar {
+    border-radius: 50%;
+}
+
+/* Card Layout */
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border: 1px solid #C4CFDC;
+    border-radius: 4px;
+    /* background-color: white; */
+    font-size: 1rem;
+  }
+
+  .card-title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .card-image {
+    background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1646915250/learnhtmlcss/images/travel-small.jpg");
+    background-size: cover;
+    background-position: cover;
+    flex: 0 0 150px;
+  }
+  
+  .card-details {
+    padding: 1em;
+    flex: 1;
+  }
+  
+  .card-details h2 {
+    margin-top: 0px;
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  
+  .card-details p {
+    color: #485467;
+    line-height: 1.3;
+  }
+
+  .card-footer p {
+    font-size: .875rem;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-details-text {
+    flex: 1;
+  }
+
+  .card-sold-out {
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.62rem;
+    position: absolute;
+    inset: 0px;
+  }
+
+.card-discount p {
+  background-color: #00695C;
+  color: white;
+  margin: 0;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: .812rem;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}
