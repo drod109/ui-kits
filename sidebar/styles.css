@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1080px;
     padding-inline: 20px;
     margin: auto;
 }
@@ -52,8 +52,8 @@ span {
     left: 0;
     top: 0;
     bottom: 0;
-    translate: -400px;
-    transition: translate 300ms;
+    /* translate: -400px;
+    transition: translate 300ms; */
 }
 
 #sidebar.opened {
